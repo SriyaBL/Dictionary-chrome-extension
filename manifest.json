@@ -9,9 +9,9 @@
         "128": "icon.png"
     },
     "permissions": [
-        "storage"
+        "activeTab", "storage", "tabs", "contextMenus"
     ],
     "action": {
-        "default-popup": "popup.html"
+        "default-popup": "./popup.html"
     }
 }
