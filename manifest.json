@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Dictionary Extension",
+    "version": "1.0",
+    "description": "A Chrome extension for retrieving word meanings",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "browser-action": {
+        "default-popup": "index.html"
+    }
+}
