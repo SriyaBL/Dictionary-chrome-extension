@@ -1,17 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "Dictionary Extension",
+    "name": "Dictionary Extension for Chrome",
     "version": "1.0",
-    "description": "A Chrome extension for retrieving word meanings",
+    "description": "A simple dictionary extension for retrieving meanings of words using HTML, CSS and JS",
     "action": {
-        "default-popup": "popup.html",
-        "default_icon": {
-            "16": "icon.png",
-            "48": "icon.png",
-            "128": "icon.png"
-          }
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
     },
-    "permissions": [
-        "activeTab"
-    ]
+    "permissions": ["activeTab"]
 }

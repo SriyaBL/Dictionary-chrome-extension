@@ -1,19 +1,23 @@
 .container {
     width: 300px;
     padding: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif; 
 }
 
-input[type="text"] {
+
+
+input[type="text"]{
     width:100%;
-    padding:8px;
+    padding:8px; 
     margin-bottom:10px;
+    padding: 5px;
     border:1px solid #ccc;
     border-radius: 4px;
 }
 
 button {
-    padding: 8px 16px;
+    padding: 5px;
+    margin-bottom:10px;
     background-color: #4CAF50;
     color:#fff;
     border:none;
@@ -21,10 +25,20 @@ button {
     cursor: pointer;
 }
 
+/* button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color:#fff;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+} */
+
 /* #meaning-container, #additional-info {
     margin-top: 10px;
     font-weight: bold;
 } */
+
 
 .meaning {
     margin-bottom: 10px;
@@ -37,3 +51,26 @@ button {
 .phonetic audio {
     margin-left: 5px;
 }
+/* 
+.container {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  input[type="text"],
+  button {
+    margin-bottom: 10px;
+  }
+  
+  .meaning {
+    margin-bottom: 10px;
+  }
+  
+  .phonetic {
+    margin-bottom: 5px;
+  }
+  
+  .phonetic audio {
+    margin-left: 5px;
+  }
+   */

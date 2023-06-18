@@ -4,7 +4,7 @@ const searchButton = document.getElementById('search-btn');
 const meaningContainer = document.getElementById('meaning-container');
 const moreInfoBtn = document.getElementById('more-info-btn');
 const additionalInfo = document.getElementById('additional-info');
-let completeInfo;
+const clearBtn = document.getElementById('clear-btn');
 
 //event listener for the search button
 searchButton.addEventListener('click', function () {
@@ -14,6 +14,7 @@ searchButton.addEventListener('click', function () {
         fetchMeaning(word)
             .then(function (data) {
                 fillMeanings(data.meanings);
+                moreInfoBtn.style.display = 'block';
                 fillAdditionalInfo(data.origin, data.phonetics);
             })
             .catch(function (error) {
@@ -36,11 +37,12 @@ function fetchMeaning(word) {
         .then(function (data) {
             return data[0];
             //assuming the response is an array with a single object     
-        })
+        });
 }
 
 //function to fill meanings
 function fillMeanings(meanings) {
+
     meaningContainer.innerHTML = '';
 
     let meaningsHTML = '';
@@ -72,6 +74,8 @@ function fillMeanings(meanings) {
 }
 
 function fillAdditionalInfo(origin, phonetics) {
+    additionalInfo.innerHTML = '';
+
     let additionalInfoHTML = '';
 
     //display the origin
@@ -97,7 +101,7 @@ function fillAdditionalInfo(origin, phonetics) {
 
             if(audio) {
                 additionalInfoHTML +=
-                `<audio src="${audio}" controls>Pronunciation</audio>`;
+                `<audio src="${audio}" controls></audio>`;
             }
 
             additionalInfoHTML += `</div>`;
@@ -116,6 +120,13 @@ moreInfoBtn.addEventListener('dblclick', function () {
     additionalInfo.style.display = 'none';
 })
 
+clearBtn.addEventListener('click', function () {
+    wordInput.value = '';
+    meaningContainer.innerHTML = '';
+    moreInfoBtn.style.display = 'none';
+    additionalInfo.innerHTML = '';
+    additionalInfo.style.display = 'none';
+})
 
 
 
