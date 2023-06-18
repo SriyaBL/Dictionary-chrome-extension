@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "A simple dictionary extension for retrieving meanings of words using HTML, CSS and JS",
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "index.html",
       "default_icon": {
         "16": "icon.png",
         "48": "icon.png",
