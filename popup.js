@@ -112,7 +112,9 @@ moreInfoBtn.addEventListener('click', function () {
     additionalInfo.style.display = 'block';
 })
 
-
+moreInfoBtn.addEventListener('dblclick', function () {
+    additionalInfo.style.display = 'none';
+})
 
 
 
