@@ -140,13 +140,6 @@ clearBtn.addEventListener('click', function () {
 
 
 
-
-
-
-
-
-
-
 // moreInfoBtn.addEventListener('click', displayAdditionalInfo);
 
 // function displayAdditionalInfo() {
