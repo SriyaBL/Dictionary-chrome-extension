@@ -116,6 +116,13 @@ moreInfoBtn.addEventListener('click', function () {
     additionalInfo.style.display = 'block';
 })
 
+wordInput.addEventListener('paste', function (event) {
+    // Get the pasted text
+    const pastedText = event.clipboardData.getData('text/plain');
+  
+    // Append the pasted text to the existing value in the input field
+    wordInput.value += pastedText;
+});
 moreInfoBtn.addEventListener('dblclick', function () {
     additionalInfo.style.display = 'none';
 })
@@ -127,6 +134,7 @@ clearBtn.addEventListener('click', function () {
     additionalInfo.innerHTML = '';
     additionalInfo.style.display = 'none';
 })
+
 
 
 
