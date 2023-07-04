@@ -113,12 +113,17 @@ function fillAdditionalInfo(origin, phonetics) {
 }
 
 moreInfoBtn.addEventListener('click', function () {
-    additionalInfo.style.display = 'block';
+    const state = additionalInfo.style.display;
+    if(state == 'none') {
+        additionalInfo.style.display = 'block';
+    } else {
+        additionalInfo.style.display = 'none';
+    }
 })
 
-moreInfoBtn.addEventListener('dblclick', function () {
-    additionalInfo.style.display = 'none';
-})
+// moreInfoBtn.addEventListener('dblclick', function () {
+//     additionalInfo.style.display = 'none';
+// })
 
 clearBtn.addEventListener('click', function () {
     wordInput.value = '';
